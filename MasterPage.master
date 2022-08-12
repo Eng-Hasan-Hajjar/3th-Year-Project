@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<%--<html>--%>
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="Styles/StyleSheet.css"/>
+    <title>WebShop</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="wrapper">
+        
+            <div id="banner">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/banner.jpg" Width="100%" Height="200px" />
+            </div>
+                <div id="navigation">
+                    <ul id="nav">
+                        
+                        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Webshop.aspx">WebShop</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/About.aspx">About us</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink3" runat="server">Search</asp:HyperLink></li>
+                        <li style="float:right">
+                            <asp:HyperLink ID="linkrgeister" runat="server" NavigateUrl="~/Pages/Register.aspx">Rgeister</asp:HyperLink>
+                            <asp:HyperLink ID="status" runat="server"></asp:HyperLink>
+                        </li>
+                        <li style="float:right">
+                            <asp:HyperLink ID="linklogin" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink>
+                            <asp:LinkButton ID="linklogout" runat="server" Visible="False">Logout</asp:LinkButton>
+                        </li>
+
+                    </ul>
+                </div>
+
+               <div id="content">
+                                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                                </asp:ContentPlaceHolder>
+               </div>
+             
+            
+
+          </div>
+      </div>
+
+
+    
+    </form>
+</body>
+

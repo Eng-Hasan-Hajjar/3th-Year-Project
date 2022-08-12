@@ -1,0 +1,126 @@
+﻿body
+{
+    color: #574c3f;
+    font-family: Corbel, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: lavender;
+}
+
+#wrapper
+{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius:25px;
+    overflow:hidden; 
+}
+
+#banner
+{
+   
+}
+
+
+#navigation
+{
+    height: 45px;
+    background: linear-gradient(to top, #c2bcb5, #ffffff);
+}
+
+#nav
+{
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+
+#nav ul {
+    display: none;
+    list-style: none;
+}
+
+#nav li {
+    float: left;
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+    border-left: 1px solid #FFFFFF;
+}
+
+#nav a:link , #nav a :visited, #nav a:active 
+{
+    display: block;
+    color: #574c3f;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: white;
+}
+
+#content
+{
+    padding: 20px;
+    min-height: 400px;
+}
+#ContentPlaceHolder1_productpnl div {
+    float: left;
+    width: 250px;
+    min-height: 100px;
+    text-align: center;
+}
+.product_name_css {
+    font-weight: bold;
+    font-size: 18px;
+}
+.product_img_css {
+    width: 150px;
+    height: 150px;
+    vertical-align: central;
+    padding: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+     border-radius: 50px;
+}
+.detailsPrice_css 
+{
+    font-family: Arial,helvetica,sans-serif;
+    color:#ff8600;
+
+    
+}
+.detailsImage {
+    height: 465px;
+    width: 400px;
+    margin-right: 30px;
+}
+
+.detailsDescription {
+    font-style: italic;
+    width: 400px;
+}
+.button {
+    background: linear-gradient(to bottom, darkgreen, green);
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+    clear: both;
+}
+.inputs {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #EAEAEA;
+    background: -moz-linear-gradient(top, #FFF, #EAEAEA);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1.0, #EAEAEA));
+    border: 1px solid #CACACA;
+    color: #b200ff;
+    margin: 0 0 25px;
+    padding: 5px 9px;
+    width: 260px;
+}
